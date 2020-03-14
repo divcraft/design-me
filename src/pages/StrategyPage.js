@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const StrategyPage = () => {
     return (
@@ -8,10 +9,10 @@ const StrategyPage = () => {
                 <Header />
             </header>
             <main>
-                main
+                Strategy main
             </main>
             <footer>
-                footer
+                <Footer />
             </footer>
         </>
     );

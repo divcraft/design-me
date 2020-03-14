@@ -1,0 +1,61 @@
+.header
+   height: 110px
+   display: flex
+   justify-content: space-between
+   align-items: center
+   .logo
+      display: block
+   .main-menu 
+      button
+         cursor: pointer
+         background: none
+         border: none
+      ul
+         display: flex
+         flex-direction: column
+         position: absolute
+         top: 110px
+         left: 0
+         height: calc(100vh - 110px)
+         background: rgba(#000000, .3)
+         text-align: center
+         list-style: none
+         transform: translateX(100%)
+      ul.active
+         transform: translateX(0%)
+      a
+         display: block
+         width: 100vw
+         text-decoration: none
+         padding: 30px 0px
+         font-family: sans-serif
+         background-color: rgb(226, 226, 226)
+         color: #484848
+      a:hover
+         color: #000
+      a.active
+         color: white
+         background: #F2B359
+
+   @media (min-width: 768px)  
+      .main-menu 
+         button
+            display: none
+         ul
+            display: flex
+            position: static
+            top: auto
+            left: auto
+            height: auto
+            background: none
+            flex-direction: row
+            transform: translateX(0)
+            a
+               width: auto
+               padding: 5px 0
+               margin: 0 15px
+               background: none
+            a.active
+               color: inherit
+               background: none
+               border-bottom: solid 4px #F2B359

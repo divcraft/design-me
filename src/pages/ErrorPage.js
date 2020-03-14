@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const ErrorPage = () => {
     return (
@@ -8,10 +9,10 @@ const ErrorPage = () => {
                 <Header />
             </header>
             <main>
-                main
+                Error main
             </main>
             <footer>
-                footer
+                <Footer />
             </footer>
         </>
     );
