@@ -6,8 +6,14 @@
 body
    overflow-x: hidden
 
-main 
-   min-height: calc(100vh - 200px)
+section 
+   margin: 50px 0
+
+
+img 
+   display: block
+   width: 100%
+   height: auto
 
 .wrapper 
    margin: 0 auto
@@ -16,16 +22,16 @@ main
 
 h1 //title 1
    font-family: 'Raleway', sans-serif
-   opacity: .7
+   opacity: .6
    font-size: 44px
    @media (min-width: 768px) 
-      font-size: 130px
-      @media (min-width: 1200px) 
-         font-size: 170px
+      font-size: 70px
+      // @media (min-width: 1200px) 
+      //    font-size: 170px
 
 h2 // title 2
    font-family: 'Raleway', sans-serif
-   opacity: .7
+   opacity: .6
    font-size: 24px
    @media (min-width: 768px) 
       font-size: 30px
@@ -33,17 +39,18 @@ h2 // title 2
          font-size: 36px
 
 h3 // main h1
+   color: $c-dark-gray
    font-size: 36px
    font-family: sans-serif
+   margin: 15px 0
 
 h4 // main h2
+   color: $c-dark-gray
    font-size: 24px
    font-family: sans-serif
 
-h1,h2,h3,h4
-   color: $c-dark-gray
-
-p
+p, li
+   line-height: 1.5
    font-family: sans-serif
    color: $c-gray
    font-size: 20px

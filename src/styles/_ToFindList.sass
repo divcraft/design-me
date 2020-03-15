@@ -1,0 +1,27 @@
+.to-find-list
+   padding: 50px 0
+   background: $c-light-gray
+   ul
+      padding: 30px 0 30px 1em
+      list-style: none
+      list-style-color: $c-dark-orange
+      display: flex
+      direction: column
+      flex-wrap: wrap
+      li
+         line-height: 1.75
+         padding-left: 15px
+         width: 100%
+         &::before
+            content: "\2022"
+            color: $c-dark-orange
+            font-weight: bold
+            display: inline-block 
+            width: 1em
+            margin-left: -1em
+         @media (min-width: 568px)
+            width: 50%
+            @media (min-width: 900px)
+               width: calc( 100% / 3 )
+               @media (min-width: 1200px)
+                  width: 25%

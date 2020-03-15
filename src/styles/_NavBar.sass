@@ -1,11 +1,11 @@
-.header
+.nav-bar
    height: 110px
    display: flex
    justify-content: space-between
    align-items: center
    .logo
       display: block
-   .main-menu 
+   .nav-menu 
       button
          cursor: pointer
          background: none
@@ -14,10 +14,11 @@
          display: flex
          flex-direction: column
          position: absolute
+         z-index: 1
          top: 110px
          left: 0
          height: calc(100vh - 110px)
-         background: rgba(#000000, .3)
+         background: white
          text-align: center
          list-style: none
          transform: translateX(100%)
@@ -38,7 +39,7 @@
          background: #F2B359
 
    @media (min-width: 768px)  
-      .main-menu 
+      .nav-menu 
          button
             display: none
          ul

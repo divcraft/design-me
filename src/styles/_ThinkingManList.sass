@@ -1,0 +1,27 @@
+.thinking-man-list
+   position: relative
+   margin-bottom: -20px
+   ul
+      list-style: none
+      position: absolute
+      top: 120px
+      left: calc(5% + 10px)
+      li
+         position: relative
+         display: block
+         max-width: 50vw
+         margin-bottom: 40px
+         font-size: 16px
+         font-weight: bold
+         &::before
+            position: absolute
+            content: url('../images/li-underline.svg')
+            bottom: -55px
+            left: 0
+   img
+      width: 60vw
+      max-width: 281px
+      transform: translate(65%, 30px)
+      position: relative
+      z-index: -1
+

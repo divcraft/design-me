@@ -13,7 +13,7 @@ class Menu extends Component {
     }
     render() {
         return (
-            <nav className='main-menu'>
+            <nav className='nav-menu'>
                 <button className='menu-icon' onClick={this.handleMenuClick}><img src={menuIcon} alt="menu" /></button>
                 <ul className={this.state.menuActive ? 'active' : null}>
                     <li><NavLink to='/' exact>Home</NavLink></li>

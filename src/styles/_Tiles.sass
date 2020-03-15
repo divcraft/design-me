@@ -1,0 +1,29 @@
+.tiles
+   transform: translateY(-50px)
+   margin-bottom: -50px
+   .tile
+      background: white
+      text-align: center
+      padding: 40px 40px
+      box-shadow: 0 0 7px 1px lightgray
+      &:nth-child(2)
+         margin: 20px 0
+      h4
+         margin-bottom: 30px 
+         padding-bottom: 20px
+         position: relative
+         &::before
+            content: ''
+            width: 108px
+            height: 4px
+            background-color: $c-light-orange
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+@media (min-width: 1200px)
+   .tiles
+      display: flex
+      // flex-direction: row
+      .tile, .tile:nth-child(2)
+         margin: 0 10px
