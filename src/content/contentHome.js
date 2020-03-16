@@ -34,6 +34,7 @@ const articleBtn = {
 }
 
 const thinkingManList = {
+   id: 4,
    title: 'Between plans and reality',
    listItems: [
       'Find profits of your own account',
@@ -44,6 +45,7 @@ const thinkingManList = {
 }
 
 const toFindList = {
+   id: 5,
    title: 'What you can find',
    listItems: [
       'Join our community',

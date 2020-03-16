@@ -14,6 +14,7 @@ import Tiles from '../components/Tiles'
 import TextArticle from '../components/TextArticle'
 import ThinkingManList from '../components/ThinkingManList'
 import ToFindList from '../components/ToFindList'
+import BtnArticle from '../components/BtnArticle'
 import Footer from '../components/Footer'
 
 const HomePage = () => {
@@ -31,6 +32,7 @@ const HomePage = () => {
             <ThinkingManList content={content.thinkingManList} image={manImg} />
             <ToFindList content={content.toFindList} />
             <TextArticle content={content.article2} images={img2} />
+            <BtnArticle content={content.articleBtn} />
          </main>
          <footer>
             <Footer />
