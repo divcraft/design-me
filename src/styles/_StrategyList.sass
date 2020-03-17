@@ -1,0 +1,28 @@
+.strategy-list
+   ul
+      margin: 50px 0
+      list-style: none
+      li
+         margin: 40px 0
+         h3
+            position: relative
+            // width: 100%
+            &::before
+               content: ''
+               position: absolute
+               bottom: -10px
+               left: 0
+               background-color: $c-light-orange
+               width: 170px
+               height: 4px
+         img
+            margin: 30px 0
+         p
+            margin: 30px 0
+@media (min-width: 768px)
+   li
+      display: flex
+      flex-wrap: wrap
+      align-items: flex-start
+      &>*
+         width: 50%

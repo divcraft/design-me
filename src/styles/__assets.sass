@@ -11,7 +11,6 @@ section
    @media (min-width: 1200px)
       margin: 70px 0
 
-
 img 
    display: block
    width: 100%
@@ -25,20 +24,18 @@ img
 h1 //title 1
    font-family: 'Raleway', sans-serif
    opacity: .6
-   font-size: 44px
-   @media (min-width: 768px) 
-      font-size: 70px
-      // @media (min-width: 1200px) 
-      //    font-size: 170px
+   // font-size: 44px
+   font-size: calc(44px + 6 * ((100vw - 320px) / 45))
+   @media (min-width: 1200px) 
+      font-size: 160px
 
 h2 // title 2
    font-family: 'Raleway', sans-serif
    opacity: .6
-   font-size: 24px
-   @media (min-width: 768px) 
-      font-size: 30px
-      @media (min-width: 1200px) 
-         font-size: 36px
+   // font-size: 24px
+   font-size: calc(24px + 6 * ((100vw - 320px) / 400))
+   @media (min-width: 1200px) 
+      font-size: 36px
 
 h3 // main h1
    color: $c-dark-gray

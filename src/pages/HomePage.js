@@ -9,7 +9,7 @@ import img2Medium from '../images/home-img2-1366.jpg';
 import img2Large from '../images/home-img2-1920.jpg';
 import manImg from '../images/man-img.jpg';
 import NavBar from '../components/NavBar'
-import Banner from '../components/Banner'
+import TitleHome from '../components/TitleHome'
 import Tiles from '../components/Tiles'
 import TextArticle from '../components/TextArticle'
 import ThinkingManList from '../components/ThinkingManList'
@@ -24,7 +24,7 @@ const HomePage = () => {
       <>
          <header className="banner-container">
             <NavBar />
-            <Banner />
+            <TitleHome />
          </header>
          <main>
             <Tiles content={content.tiles} />

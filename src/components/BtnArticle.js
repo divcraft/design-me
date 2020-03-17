@@ -1,13 +1,16 @@
 import React from 'react';
 import Article from './Article';
-import CtaButtons from './CtaButtons';
+import { Link } from 'react-router-dom';
 
 const BtnArticle = ({ content }) => {
    const { title, text } = content
    return (
-      <section className="text-article">
+      <section className="btn-article">
          <Article title={title} text={text} />
-         <CtaButtons />
+         <div className="cta-nav-btns">
+            <Link to='/contact' className="start-now" >START NOW</Link>
+            <Link to='/contact' className="learn-more" >LEARN MORE</Link>
+         </div>
       </section>
    );
 }
