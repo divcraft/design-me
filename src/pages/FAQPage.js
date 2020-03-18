@@ -1,5 +1,9 @@
 import React from 'react';
+import '../styles/FAQPage.sass';
+import content from '../content/contentFAQ'
 import NavBar from '../components/NavBar';
+import TitleAll from '../components/TitleAll';
+import FAQList from '../components/FAQList';
 import Footer from '../components/Footer';
 
 const FAQPage = () => {
@@ -7,9 +11,10 @@ const FAQPage = () => {
         <>
             <header>
                 <NavBar />
+                <TitleAll title={content.headerTitle} />
             </header>
             <main>
-                FAQ main
+                <FAQList faqList={content.faqList} />
             </main>
             <footer>
                 <Footer />

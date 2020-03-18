@@ -9,7 +9,7 @@ const BtnArticle = ({ content }) => {
          <Article title={title} text={text} />
          <div className="cta-nav-btns">
             <Link to='/contact' className="start-now" >START NOW</Link>
-            <Link to='/contact' className="learn-more" >LEARN MORE</Link>
+            <Link to='/strategy' className="learn-more" >LEARN MORE</Link>
          </div>
       </section>
    );

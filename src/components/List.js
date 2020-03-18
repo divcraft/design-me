@@ -2,7 +2,7 @@ import React from 'react';
 
 const List = ({ listItems }) => {
    const items = listItems.map(item => (
-      <li>{item}</li>
+      <li key={listItems.indexOf(item)}>{item}</li>
    ))
    return (
       <ul>
