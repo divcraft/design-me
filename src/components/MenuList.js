@@ -5,7 +5,7 @@ import MenuListItem from './MenuListItem';
 
 const MenuList = ({ className }) => {
    const items = menuLinks.map(link => (
-      <MenuListItem link={link.path} pageName={link.pageName} exact={link.exact} />
+      <MenuListItem key={link.id} link={link.path} pageName={link.pageName} exact={link.exact} />
    ))
    return (
       <ul className={className}>
