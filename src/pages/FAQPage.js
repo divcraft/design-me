@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/FAQPage.sass';
 import content from '../content/contentFAQ'
 import NavBar from '../components/NavBar';
 import TitleAll from '../components/TitleAll';

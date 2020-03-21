@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/HomePage.sass';
 import content from '../content/contentHome.js'
 import img1Small from '../images/home-img1-768.jpg';
 import img1Medium from '../images/home-img1-1366.jpg';
@@ -10,8 +9,8 @@ import img2Large from '../images/home-img2-1920.jpg';
 import manImg from '../images/man-img.jpg';
 import NavBar from '../components/NavBar'
 import TitleHome from '../components/TitleHome'
-import Tiles from '../components/Tiles'
-import TextArticle from '../components/TextArticle'
+import BenefitsTiles from '../components/BenefitsTiles'
+import ImageArticle from '../components/ImageArticle'
 import ThinkingManList from '../components/ThinkingManList'
 import ToFindList from '../components/ToFindList'
 import BtnArticle from '../components/BtnArticle'
@@ -27,11 +26,11 @@ const HomePage = () => {
             <TitleHome />
          </header>
          <main>
-            <Tiles content={content.tiles} />
-            <TextArticle content={content.article1} images={img1} />
+            <BenefitsTiles content={content.tiles} />
+            <ImageArticle content={content.article1} images={img1} />
             <ThinkingManList content={content.thinkingManList} image={manImg} />
             <ToFindList content={content.toFindList} />
-            <TextArticle content={content.article2} images={img2} />
+            <ImageArticle content={content.article2} images={img2} />
             <BtnArticle content={content.articleBtn} />
          </main>
          <footer>

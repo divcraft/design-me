@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
 import menuIcon from '../images/menu-icon.svg';
+import MenuButton from './MenuButton';
+import MenuList from './MenuList';
 
 class Menu extends Component {
     state = {
@@ -14,13 +15,8 @@ class Menu extends Component {
     render() {
         return (
             <nav className='nav-menu'>
-                <button className='menu-icon' onClick={this.handleMenuClick}><img src={menuIcon} alt="menu" /></button>
-                <ul className={this.state.menuActive ? 'active' : null}>
-                    <li><NavLink to='/' exact>Home</NavLink></li>
-                    <li><NavLink to='/strategy'>Strategy</NavLink></li>
-                    <li><NavLink to='/faq'>FAQ</NavLink></li>
-                    <li><NavLink to='/contact'>Contact</NavLink></li>
-                </ul>
+                <MenuButton onClick={this.handleMenuClick} menuIcon={menuIcon} />
+                <MenuList className={this.state.menuActive ? 'active' : null} />
             </nav>
         );
     }

@@ -1,13 +1,14 @@
 import React from 'react';
-import List from './List';
+import SectionTitle1 from './SectionTitle1';
+import HomeList from './HomeList';
 
 const ToFindList = ({ content }) => {
    const { title, listItems } = content
    return (
       <section className='to-find-list'>
          <div className="wrapper">
-            <h3>{title}</h3>
-            <List listItems={listItems} />
+            <SectionTitle1 title={title} />
+            <HomeList listItems={listItems} />
          </div>
       </section>
    );

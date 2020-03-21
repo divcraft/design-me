@@ -2,13 +2,14 @@
    position: relative
    margin-bottom: -20px
    h3
+      transform: translateY(10px)
       @media (min-width: 768px)
          text-align: center
    ul
       list-style: none
       position: absolute
-      top: 120px
-      left: 10%
+      top: 150px
+      left: 0
       li
          position: relative
          display: block
@@ -24,7 +25,7 @@
    img
       width: 60vw
       max-width: 281px
-      transform: translate(-100%, 30px)
+      transform: translate(-100%, 50px)
       position: relative
       left: 100%
       z-index: -1
@@ -43,29 +44,29 @@
             &:nth-child(1)
                text-align: right
                top: 40px
-               left: 20px
+               left: 0px
                &::before
-                  left: 30px
+                  left: 40px
             &:nth-child(2)
                top: 40px
-               right: 20px
+               right: 0px
                &::before
                   transform: scaleX(-1)
-                  right: 30px
+                  right: 40px
             &:nth-child(3)
                text-align: right
                bottom: 220px
-               left: 20px
+               left: 0px
                &::before
                   transform: scaleY(-1)
                   bottom: -10px
-                  left: 30px
+                  left: 40px
             &:nth-child(4)
                bottom: 220px
-               right: 20px
+               right: 0px
                &::before
                   transform: scale(-1)
-                  right: 30px
+                  right: 40px
                   bottom: -10px   
       img
          transform: translate(-50%, 30px)

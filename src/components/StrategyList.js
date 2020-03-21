@@ -1,19 +1,18 @@
 import React from 'react';
+import StrategyListItem from './StrategyListItem';
+
 
 const StrategyList = ({ strategyList, images }) => {
-   const listItems = strategyList.map(item => {
+   const StrategyListItems = strategyList.map(item => {
       const image = images.filter(image => images.indexOf(image) === strategyList.indexOf(item))
       return (
-         <li key={item.id}>
-            <h3>{item.title}</h3>
-            <img src={image} alt={item.title} />
-            <p>{item.text}</p>
-         </li>)
+         <StrategyListItem key={item.id} title={item.title} src={image} alt={item.title} text={item.text} />
+      )
    })
    return (
       <section className="strategy-list wrapper">
          <ul>
-            {listItems}
+            {StrategyListItems}
          </ul>
       </section>
    );

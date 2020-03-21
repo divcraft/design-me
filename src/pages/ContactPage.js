@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/ContactPage.sass'
 import content from '../content/contentContact';
 import img from '../images/contact-img-768.jpg'
 import NavBar from '../components/NavBar';

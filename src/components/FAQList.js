@@ -1,11 +1,9 @@
 import React from 'react';
+import FAQListItem from './FAQListItem';
 
 const FAQList = ({ faqList }) => {
    const list = faqList.map(item => (
-      <li key={item.id}>
-         <h3>{item.title}</h3>
-         <p>{item.text}</p>
-      </li>
+      <FAQListItem key={item.id} title={item.title} text={item.text} />
    ))
    return (
       <section className="faq-list wrapper">

@@ -2,13 +2,13 @@ import React from 'react';
 import SectionTitle1 from './SectionTitle1';
 import Paragraph from './Paragraph';
 
-const Atricle = ({ title, text }) => {
+const FAQListItem = ({ title, text }) => {
    return (
-      <article className="wrapper">
+      <li>
          <SectionTitle1 title={title} />
          <Paragraph text={text} />
-      </article>
+      </li>
    );
 }
 
-export default Atricle;
+export default FAQListItem;

@@ -1,14 +1,15 @@
 import React from 'react';
 import SectionTitle1 from './SectionTitle1';
+import Image from './Image';
 import Paragraph from './Paragraph';
 
-const Atricle = ({ title, text }) => {
+const StrategyListitem = ({ title, src, alt, text }) => {
    return (
-      <article className="wrapper">
+      <li>
          <SectionTitle1 title={title} />
+         <Image src={src} alt={alt} />
          <Paragraph text={text} />
-      </article>
-   );
+      </li>)
 }
 
-export default Atricle;
+export default StrategyListitem;

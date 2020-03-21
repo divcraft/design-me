@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/StrategyPage.sass';
 import content from '../content/contentStrategy';
 import img1 from '../images/illustration1-768.jpg';
 import img2 from '../images/illustration2-768.jpg';

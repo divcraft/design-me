@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Tile = ({ title, text }) => {
+const BenefitsTile = ({ title, text }) => {
    return (
       <div className='tile'>
          <h4>{title}</h4>
@@ -9,4 +9,4 @@ const Tile = ({ title, text }) => {
    );
 }
 
-export default Tile;
+export default BenefitsTile;
